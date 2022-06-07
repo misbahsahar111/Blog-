@@ -1,0 +1,18 @@
+<div class="col-lg-8 mx-auto">
+<div class="card shadow mb-3">
+    <div class="card-body">
+    <h1><%= @article.title %></h1>
+    <p><%= @article.body %></p>
+    <p><%= @article.user_id %></p>
+    
+      <%= link_to "Edit", edit_article_path(@article) ,class:"btn btn-primary btn-lg btn-block"%>
+
+      <%= link_to "Destroy", article_path(@article),class:"btn btn-danger btn-lg btn-block", data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+    
+    </div>
+    </div>
+
+</div>
