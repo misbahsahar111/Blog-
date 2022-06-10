@@ -14,6 +14,9 @@ gem "sqlite3", "~> 1.4"
 
 gem 'devise'
 gem 'pg_search'
+gem 'carrierwave', '~> 2.0'
+	
+gem 'mini_magick'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
